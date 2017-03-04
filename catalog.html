@@ -9,7 +9,7 @@
 <body>
   <header class='page-header'>
     <div class='page-header__logo'>
-      <img src='img/logo.sv' width='66px' height='36px' alt='Mishka' />
+      <img src='img/logo.sv' width='66' height='36' alt='Mishka'/>
     </div>
     <nav class='main-nav page-header__nav main-nav--closed main-nav-nojs'>
       <button class='main-nav__toggle' type='button'>Открыть меню</button>
@@ -21,28 +21,36 @@
           <li class='main-nav__item'><a class='main-nav__user-login' href='#' title='Войти'>Корзина пока пуста</a></li>
         </ul>
       </div>
-      <b class='page-header__title'>Каталог товаров</b>
+      <section class="header-promo">
+        <b class='page-header__title'>Каталог товаров</b>
+      </section>
     </nav>
   </header>
-  <main class='cnt'>
+  <main class='page-content'>
     <section class='catalog'>
       <div class='catalog__goods goods'>
-        <img class='goods_photo' src='img/photo-1-mobile.jpg' width='260px' height='195' />
+        <div class='goods_photo'>
+          <img src='img/photo-1-mobile.jpg' width='260' height='195' alt='Зайчик-попрыгайчик'/>
+        </div>
         <h1 class='goods__name'>Зайчик-попрыгайчик</h1>
         <b class='goods__description'>Рост 30 см, вес 200 г</b>
         <span class='goods__price'>1200 руб.</span>
         <a class='goods__basket'>Корзина</a>
       </div>
       <div class='catalog__goods goods'>
-        <img class='goods_photo' src='img/photo-2-mobile.jpg' width='260px' height='195' />
-        <h1 class='goods__name'><Корзина для белья/h1>
-          <b class='goods__description'>Диаметр 15 см, высота 10 см</b>
-          <span class='goods__price'>690 руб.</span>
-          <a class='goods__basket'>Корзина</a>
+        <div class='goods_photo'>
+          <img src='img/photo-2-mobile.jpg' width='260' height='195' alt='Корзина для белья'/>
         </div>
-        <div class='catalog__goods goods'>
-            <img class='goods_photo' src='img/photo-3-mobile.jpg' width='260px' height='195'/>
-          <h1 class='goods__name'>Большая корзина для игрушек</h1>
+        <h1 class='goods__name'>Корзина для белья</h1>
+        <b class='goods__description'>Диаметр 15 см, высота 10 см</b>
+        <span class='goods__price'>690 руб.</span>
+        <a class='goods__basket'>Корзина</a>
+      </div>
+      <div class='catalog__goods goods'>
+        <div class='goods_photo'>
+          <img src='img/photo-3-mobile.jpg' width='260' height='195' alt='Корзина для игрушек'/>
+        </div>
+        <h1 class='goods__name'>Большая корзина для игрушек</h1>
         <b class='goods__description'>Диаметр 30см, высота 30 см</b>
         <span class='goods__price'>1500 руб.</span>
         <a class='goods__basket'>Корзина</a>
@@ -50,7 +58,7 @@
     </section>
     <section class='video'>
       <h2 class='video__title'>Процесс производства</h2>
-      <video controls="none" preload="metadata" width="260" height="150">
+      <video preload="metadata" width="260" height="150">
           <source src=".mp4" type="video/mp4">
           <source src=".ogv" type="video/ogg">
           <source src=".webm" type="video/webm">
@@ -68,7 +76,7 @@
       </ul>
     </div>
     <hr />
-    <b class='social__developer'><a href-'#'>Разработано</a></b>
+    <b class='social__developer'><a href='#'>Разработано</a></b>
   </footer>
 </body>
 

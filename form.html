@@ -9,7 +9,7 @@
 <body>
   <header class='page-header'>
     <div class='page-header__logo'>
-      <img src='img/logo.sv' width='66px' height='36px' alt='Mishka' />
+      <img src='img/logo.sv' width='66' height='36' alt='Mishka' />
     </div>
     <nav class='main-nav page-header__nav main-nav--closed main-nav-nojs'>
       <button class='main-nav__toggle' type='button'>Открыть меню</button>
@@ -21,57 +21,72 @@
           <li class='main-nav__item'><a class='main-nav__user-login' href='#' title='Войти'>Корзина пока пуста</a></li>
         </ul>
       </div>
-      <b class='page-header__title'>Вязание на заказ</b>
+      <section class="header-promo">
+        <b class='page-header__title'>Вязание на заказ</b>
+      </section>
     </nav>
   </header>
-  <main class='cnt'>
-    <section class='order'>
+  <main class='page-content'>
+    <section class='page-content__order'>
       <p class='order__text'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class='form' action='https://echo.htmlacadevy.ru' method='get'>
         <fieldset class='form__fieldset form'>
           <legend class='form-name'>Тип</legend>
-          <input class='form__rd' type='radio' id='accessories' name='goods' value='Аксессуары' checked>
-          <label class='form__rd-name' for='accessories'>Аксессуары для интерьера</label>
-          <input class='form__rd' type='radio' id='toy' name='goods' value='Игрушки'>
-          <label class='form__rd-name' for='toy'>Детская игрушка</label>
+          <label class='form__rd-name'>Аксессуары для интерьера
+          <input class='form__rd' type='radio' name='goods' value='Аксессуары' checked>
+          </label>
+          <label class='form__rd-name'>Детская игрушка
+          <input class='form__rd' type='radio' name='goods' value='Игрушки'>
+          </label>
         </fieldset>
         <fieldset class='form__color form'>
           <legend class='form-name'>Цвет</legend>
-          <label class='form__chk-name' for='Белый'>Белый</label>
-          <input class='form__chk' type='checkbox' name='color' id='white' value='Белый' checked>
-          <label class='form__chk-name' for='gray'>Серый</label>
-          <input class='form__chk' type='checkbox' name='color' id='gray' value='Серый' checked>
-          <label class='form__chk-name' for='tiffany'>&lt;&lt;Тиффани&gt;&gt;</label>
-          <input class='form__chk' type='checkbox' name='color' id='tiffany' value='Тиффани'>
-          <label class='form__chk-name' for='black'>Черный</label>
-          <input class='form__chk' type='checkbox' name='color' id='black' value='Черный'>
-          <label class='form__chk-name' for='pink'>Розовый</label>
-          <input class='form__chk' type='checkbox' name='color' id='pink' value='Розовый'>
-          <label class='form__chk-name' for='orange'>Оранжевый</label>
-          <input class='form__chk' type='checkbox' name='color' id='orange' value='Оранжевый'>
+          <label class='form__chk-name'>Белый
+          <input class='form__chk' type='checkbox' name='color' value='Белый' checked>
+          </label>
+          <label class='form__chk-name'>Серый
+          <input class='form__chk' type='checkbox' name='color' value='Серый' checked>
+          </label>
+          <label class='form__chk-name'>&lt;&lt;Тиффани&gt;&gt;
+          <input class='form__chk' type='checkbox' name='color' value='Тиффани'>
+          </label>
+          <label class='form__chk-name'>Черный
+          <input class='form__chk' type='checkbox' name='color' value='Черный'>
+          </label>
+          <label class='form__chk-name'>Розовый
+          <input class='form__chk' type='checkbox' name='color' value='Розовый'>
+          </label>
+          <label class='form__chk-name'>Оранжевый
+          <input class='form__chk' type='checkbox' name='color' value='Оранжевый'>
+          </label>
         </fieldset>
         <fieldset class='form__name'>
           <legend class='form-name'>Фио</legend>
-          <label class='form-name__description' for='name'>Имя:</label>
-          <input class='form-name__name' type='text' id='name' name='name' value='Введите ваше имя>' required>
-          <label class='form-name__description' for='surname'>Фмилия:</label>
-          <input class='form-name__name' type='text' id='surname' name='surname' value='Укажите фамилию>' required>
-          <label class='form-name__description' for="last-name">Отчество:</label>
-          <input class='form-name__name' type='text' id='last-name' name="name" value='Отчество, если желаете'>
+          <label class='form-name__description'>Имя:
+          <input class='form-name__name' type='text' name='name' value='Введите ваше имя>' required>
+          </label>
+          <label class='form-name__description'>Фмилия:
+          <input class='form-name__name' type='text' name='surname' value='Укажите фамилию>' required>
+          </label>
+          <label class='form-name__description'>Отчество:
+          <input class='form-name__name' type='text' name="name" value='Отчество, если желаете'>
+          </label>
         </fieldset>
         <fieldset class='form__tel'>
           <legend class='form-name'>Тел</legend>
-          <label class='form-tel-description' for="tel"></label>
-          <input class='form-tel__tel'>type="tel" name="tel" pattern="[+7]{1}-[0-9]{3}-[0-9]{3}" required>
+          <label class='form-tel-description'>
+          <input class='form-tel__tel' type="tel" name="tel" pattern="[+7]{1}-[0-9]{3}-[0-9]{3}" required>
+          </label>
         </fieldset>
         <fieldset class='form__email'>
           <legend class='form-name'>E-mail</legend>
-          <label class='form-email-describtion' for="email"></label>
+          <label class='form-email-describtion'>
           <input class='form-email__email' type="email" name='Ваш Email' required>
+          </label>
         </fieldset>
         <fieldset class='form__text form'>
           <legend class='form-name'>Доп</legend>
-          <label class='form-text' class='form-text'for="comment-field">Доп</label>
+          <label class='form-text' for="comment-field">Доп</label>
           <textarea class='form-text__text' name="comment" id="comment-field">Опишите все ваши пожелания к заказу</textarea>
         </fieldset>
         <b class='form__rule'><sup>*</sup>Поля обязательны для заполнения</b>
@@ -88,7 +103,7 @@
       </ul>
     </div>
     <hr />
-    <b class='social__developer'><a href-'#'>Разработано</a></b>
+    <b class='social__developer'><a href='#'>Разработано</a></b>
   </footer>
 </body>
 
