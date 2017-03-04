@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class='page-header'>
+    <div class='page-header__logo'>
+      <img src='img/logo.sv' width='66px' height='36px' alt='Mishka' />
+    </div>
+    <nav class='main-nav page-header__nav main-nav--closed main-nav-nojs'>
+      <button class='main-nav__toggle' type='button'>Открыть меню</button>
+      <div class='main-nav__wripper'>
+        <ul class='main-nav__items'>
+          <li class='main-nav__item'><a href='#'>Каталог товаров</a></li>
+          <li class='main-nav__item'><a href='#'>Вязание на заказ</a></li>
+          <li class='main-nav__item'><a href='#'>Поиск по сайту</a></li>
+          <li class='main-nav__item'><a class='main-nav__user-login' href='#' title='Войти'>Корзина пока пуста</a></li>
+        </ul>
+      </div>
+      <b class='page-header__title'>Каталог товаров</b>
+    </nav>
+  </header>
+  <main>
+    <section class='catalog'>
+      <div class='catalog__goods goods'>
+        <img class='goods_photo' src='img/photo-1-mobile.jpg' width='260px' height='195' />
+        <h1 class='goods__name'>Зайчик-попрыгайчик</h1>
+        <b class='goods__description'>Рост 30 см, вес 200 г</b>
+        <span class='goods__price'>1200 руб.</span>
+        <a class='goods__basket'>Корзина</a>
+      </div>
+      <div class='catalog__goods goods'>
+        <img class='goods_photo' src='img/photo-2-mobile.jpg' width='260px' height='195' />
+        <h1 class='goods__name'><Корзина для белья/h1>
+          <b class='goods__description'>Диаметр 15 см, высота 10 см</b>
+          <span class='goods__price'>690 руб.</span>
+          <a class='goods__basket'>Корзина</a>
+        </div>
+        <div class='catalog__goods goods'>
+            <img class='goods_photo' src='img/photo-3-mobile.jpg' width='260px' height='195'/>
+          <h1 class='goods__name'>Большая корзина для игрушек</h1>
+        <b class='goods__description'>Диаметр 30см, высота 30 см</b>
+        <span class='goods__price'>1500 руб.</span>
+        <a class='goods__basket'>Корзина</a>
+      </div>
+    </section>
+    <section class='video'>
+      <h2 class='video__title'>Процесс производства</h2>
+      <video controls="none" preload="metadata" width="260" height="150">
+          <source src=".mp4" type="video/mp4">
+          <source src=".ogv" type="video/ogg">
+          <source src=".webm" type="video/webm">
+        </video>
+      <p class="video__cnt">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class='video__btn'>Сделать заказ</a>
+    </section>
+  </main>
+  <footer class='page-footer'>
+    <div class='page-footer social'>
+      <ul class='social__items'>
+        <li class='social__item'><a class='social social-inst'>Инстаграм</a></li>
+        <li class='social__item'><a class='social social-fb'>Фейсбук</a></li>
+        <li class='social__item'><a class='social social-tw'>Твиттер</a></li>
+      </ul>
+    </div>
+    <hr />
+    <b class='social__developer'><a href-'#'>Разработано</a></b>
+  </footer>
+</body>
+
+</html>
