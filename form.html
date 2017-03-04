@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class='page-header'>
+    <div class='page-header__logo'>
+      <img src='img/logo.sv' width='66' height='36' alt='Mishka' />
+    </div>
+    <nav class='main-nav page-header__nav main-nav--closed main-nav-nojs'>
+      <button class='main-nav__toggle' type='button'>Открыть меню</button>
+      <div class='main-nav__wripper'>
+        <ul class='main-nav__items'>
+          <li class='main-nav__item'><a href='#'>Каталог товаров</a></li>
+          <li class='main-nav__item'><a href='#'>Вязание на заказ</a></li>
+          <li class='main-nav__item'><a href='#'>Поиск по сайту</a></li>
+          <li class='main-nav__item'><a class='main-nav__user-login' href='#' title='Войти'>Корзина пока пуста</a></li>
+        </ul>
+      </div>
+      <section class="header-promo">
+        <b class='page-header__title'>Вязание на заказ</b>
+      </section>
+    </nav>
+  </header>
+  <main class='page-content'>
+    <section class='page-content__order'>
+      <p class='order__text'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class='form' action='https://echo.htmlacadevy.ru' method='get'>
+        <fieldset class='form__fieldset form'>
+          <legend class='form-name'>Тип</legend>
+          <label class='form__rd-name'>Аксессуары для интерьера
+          <input class='form__rd' type='radio' name='goods' value='Аксессуары' checked>
+          </label>
+          <label class='form__rd-name'>Детская игрушка
+          <input class='form__rd' type='radio' name='goods' value='Игрушки'>
+          </label>
+        </fieldset>
+        <fieldset class='form__color form'>
+          <legend class='form-name'>Цвет</legend>
+          <label class='form__chk-name'>Белый
+          <input class='form__chk' type='checkbox' name='color' value='Белый' checked>
+          </label>
+          <label class='form__chk-name'>Серый
+          <input class='form__chk' type='checkbox' name='color' value='Серый' checked>
+          </label>
+          <label class='form__chk-name'>&lt;&lt;Тиффани&gt;&gt;
+          <input class='form__chk' type='checkbox' name='color' value='Тиффани'>
+          </label>
+          <label class='form__chk-name'>Черный
+          <input class='form__chk' type='checkbox' name='color' value='Черный'>
+          </label>
+          <label class='form__chk-name'>Розовый
+          <input class='form__chk' type='checkbox' name='color' value='Розовый'>
+          </label>
+          <label class='form__chk-name'>Оранжевый
+          <input class='form__chk' type='checkbox' name='color' value='Оранжевый'>
+          </label>
+        </fieldset>
+        <fieldset class='form__name'>
+          <legend class='form-name'>Фио</legend>
+          <label class='form-name__description'>Имя:
+          <input class='form-name__name' type='text' name='name' value='Введите ваше имя>' required>
+          </label>
+          <label class='form-name__description'>Фмилия:
+          <input class='form-name__name' type='text' name='surname' value='Укажите фамилию>' required>
+          </label>
+          <label class='form-name__description'>Отчество:
+          <input class='form-name__name' type='text' name="name" value='Отчество, если желаете'>
+          </label>
+        </fieldset>
+        <fieldset class='form__tel'>
+          <legend class='form-name'>Тел</legend>
+          <label class='form-tel-description'>
+          <input class='form-tel__tel' type="tel" name="tel" pattern="[+7]{1}-[0-9]{3}-[0-9]{3}" required>
+          </label>
+        </fieldset>
+        <fieldset class='form__email'>
+          <legend class='form-name'>E-mail</legend>
+          <label class='form-email-describtion'>
+          <input class='form-email__email' type="email" name='Ваш Email' required>
+          </label>
+        </fieldset>
+        <fieldset class='form__text form'>
+          <legend class='form-name'>Доп</legend>
+          <label class='form-text' for="comment-field">Доп</label>
+          <textarea class='form-text__text' name="comment" id="comment-field">Опишите все ваши пожелания к заказу</textarea>
+        </fieldset>
+        <b class='form__rule'><sup>*</sup>Поля обязательны для заполнения</b>
+        <a class='form__btn'>Отправить заказ</a>
+      </form>
+    </section>
+  </main>
+  <footer class='page-footer'>
+    <div class='page-footer social'>
+      <ul class='social__items'>
+        <li class='social__item'><a class='social social-inst'>Инстаграм</a></li>
+        <li class='social__item'><a class='social social-fb'>Фейсбук</a></li>
+        <li class='social__item'><a class='social social-tw'>Твиттер</a></li>
+      </ul>
+    </div>
+    <hr />
+    <b class='social__developer'><a href='#'>Разработано</a></b>
+  </footer>
+</body>
+
+</html>
