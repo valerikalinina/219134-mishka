@@ -1,0 +1,64 @@
+.contacts {
+  color: @type-color;
+  margin: 0 auto;
+
+  &__title {
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__table {
+    margin-bottom: 27px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__row {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__cell {
+    vertical-align: top;
+    text-align: left;
+    margin: 0;
+    padding: 10px 30px;
+  }
+
+  &__cell:first-of-type {
+    height: 15px;
+    padding-left: 0;
+  }
+
+  &__link {
+    color: @type-color;
+    text-decoration: @link-color-hover;
+  }
+
+  &__map {
+    height: 457px;
+    width: auto;
+    margin: 0;
+    background-image: url('img/map-mobile@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 7px 51px;
+    font-size:18px;
+    line-height: 20px;
+    width: 158px;
+    height: 38px;
+    font-size: 17px;
+    line-height: 20px;
+    border: 2px solid @type-color;
+    text-transform: uppercase;
+  }
+
+}

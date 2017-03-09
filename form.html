@@ -6,19 +6,19 @@
   <title>HTML Academy: Мишка</title>
 </head>
 
-<body>
+<body class='body__form'>
   <header class='page-header'>
     <div class='page-header__logo'>
       <img src='img/logo.sv' width='66' height='36' alt='Mishka' />
     </div>
+    <button class='page-header__toggle' type='button'>Открыть меню</button>
     <nav class='main-nav page-header__nav main-nav--closed main-nav-nojs'>
-      <button class='main-nav__toggle' type='button'>Открыть меню</button>
       <div class='main-nav__wripper'>
         <ul class='main-nav__items'>
-          <li class='main-nav__item'><a href='#'>Каталог товаров</a></li>
-          <li class='main-nav__item'><a href='#'>Вязание на заказ</a></li>
-          <li class='main-nav__item'><a href='#'>Поиск по сайту</a></li>
-          <li class='main-nav__item'><a class='main-nav__user-login' href='#' title='Войти'>Корзина пока пуста</a></li>
+          <li class='main-nav__item'><a class='main-nav__variables' href='catalog.html'>Каталог товаров</a></li>
+          <li class='main-nav__item'><a class='main-nav__variables' href='form.html'>Вязание на заказ</a></li>
+          <li class='main-nav__item'><a class='main-nav__variables' href='#'>Поиск по сайту</a></li>
+          <li class='main-nav__item'><a class='main-nav__variables' href='#' title='Войти'>Корзина пока пуста</a></li>
         </ul>
       </div>
       <section class="header-promo">
@@ -27,7 +27,7 @@
     </nav>
   </header>
   <main class='page-content'>
-    <section class='page-content__order'>
+    <section class='page-content order'>
       <p class='order__text'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class='form' action='https://echo.htmlacadevy.ru' method='get'>
         <fieldset class='form__fieldset form'>
@@ -86,8 +86,8 @@
         </fieldset>
         <fieldset class='form__text form'>
           <legend class='form-name'>Доп</legend>
-          <label class='form-text' for="comment-field">Доп</label>
-          <textarea class='form-text__text' name="comment" id="comment-field">Опишите все ваши пожелания к заказу</textarea>
+          <label class='form-text'>
+          <textarea class='form-text__text' name="comment">Опишите все ваши пожелания к заказу</textarea></label>
         </fieldset>
         <b class='form__rule'><sup>*</sup>Поля обязательны для заполнения</b>
         <a class='form__btn'>Отправить заказ</a>
@@ -97,13 +97,12 @@
   <footer class='page-footer'>
     <div class='page-footer social'>
       <ul class='social__items'>
-        <li class='social__item'><a class='social social-inst'>Инстаграм</a></li>
-        <li class='social__item'><a class='social social-fb'>Фейсбук</a></li>
-        <li class='social__item'><a class='social social-tw'>Твиттер</a></li>
+        <li class='social__item'><a class='social__social-inst'>Инстаграм</a></li>
+        <li class='social__item'><a class='social__social-fb'>Фейсбук</a></li>
+        <li class='social__item'><a class='social__social-tw'>Твиттер</a></li>
       </ul>
     </div>
-    <hr />
-    <b class='social__developer'><a href='#'>Разработано</a></b>
+    <b class='social__developer'><a class='social social__link' href='#'>Разработано</a></b>
   </footer>
 </body>
 

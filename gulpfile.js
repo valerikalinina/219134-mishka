@@ -32,3 +32,9 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
 });
+
+  gulp.task("less", function() {
+    gulp.src("less/style.less")
+      .pipe(less())
+      .pipe(gulp.dest("css"));
+  });
