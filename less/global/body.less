@@ -1,35 +1,30 @@
 body {
-  min-width: 260px;
+  width: 320px;
   font-size: 15px;
   line-height: 24px;
   font-family: 'Open Sans';
   font-weight: 300;
   font-style: normal;
-	color: black;
+  color: black;
   background: #fff;
-  margin: 0;
+  margin: 0 auto;
 
-  &__catalog {
-    min-width: 260px;
-    font-size: 15px;
-    line-height: 24px;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-style: normal;
-  	color: black;
-    background: #fff;
-    margin: 0 auto;
+  .container {
+    width: 320;
+    padding: 0 30px;
   }
 
-  &__form {
-    min-width: 260px;
-    font-size: 15px;
-    line-height: 24px;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-style: normal;
-  	color: black;
-    background: #fff;
-    margin: 0;
+@media @tablet-widths {
+    .container {
+      min-width: 668px;
+      padding: 0 50px;
+    }
+
+  }
+
+  @media @desktop-widths {
+    .container {
+      min-width: 1050px;
+    }
   }
 }
