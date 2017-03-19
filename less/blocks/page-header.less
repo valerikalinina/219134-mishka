@@ -1,12 +1,32 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 320px;
-  min-height: 396px;
+  height: auto;
+
+  &__container {
+    .container();
+  }
 
   &__logo {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 320px;
     height: 80px;
-    padding: 22px 116px;
+    border-bottom: 1px solid @border-color;
+  }
+
+  &__logo-logo {
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    position: absolute;
+    left: 116px;
+    top: 22px;
   }
 
   &__logo:hover {
@@ -19,10 +39,46 @@
 
   &__toggle {
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 32px;
     font-size: 0px;
+    z-index: 2;
+    display: block;
+    width: 21px;
+    height: 14px;
+    font-size: 0;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    }
+/*
+    .main-nav--closed .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 17px;
+      width: 36px;
+      height: 2px;
+      background-color: #000;
+      box-shadow: 0 8px 0 0 #000,
+                  0 16px 0 0 #000;
+     }
+
+     .main-nav--closed .main-nav__toggle:active::before {
+       background-color: rgba(0, 0, 0, 0.3);
+       box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3),
+                   0 16px 0 0 rgba(0, 0, 0, 0.3);
+      }
+
+  &__toggle::before {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    font-size: 0px;
+    z-index: 2;
   }
+*/
 
   &__nav {
     padding-right: 0px;
@@ -32,20 +88,44 @@
 
 
 @media @tablet-widths {
-
-  .page-header {
-    display: block;
-    vertical-align: top;
+.page-header {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    width: 768px;
-    min-height: 80px;
+    width: 84%;
+    max-width: 960px;
+    min-height: 88px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
-  .page-header__logo {
+  &__logo-logo {
+    flex-grow: 1;
     position: absolute;
     left: 0%;
-    top: 50%;
-    width: 100%;
+    top: 0%;
+    border-right: 1px solid @border-color;
+    border-bottom: 1px solid @border-color;
   }
+
+  &__logo-logo {
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    position: absolute;
+    left: 48px;
+    top: 22px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .page-header {
+     min-width:;
+   }
 
 }

@@ -1,4 +1,7 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   margin-bottom: 44px;
 
   &__title {
@@ -26,6 +29,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
+    margin-top: 10px;
   }
 
   &__auhor-social {
@@ -39,14 +43,22 @@
 
   }
   &__items {
+    display: flex;
+    flex-direction: row;
     margin: 0;
+    margin-top: 30px;
     padding: 0;
   }
 
   &__item {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
+    height: 52px;
+    width: 130px;
     list-style: none;
     border: 1px solid @border-color;
   }

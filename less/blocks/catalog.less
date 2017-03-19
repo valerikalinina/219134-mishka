@@ -1,18 +1,11 @@
 .catalog {
-  margin: 0 auto;
-
-  &__items {
-  margin: 0;
-  padding: 0;
-  width: 320px;
-  }
 
   &__item {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 320px;
+    width: auto;
     height: 103px;
     background-color: @link-color-hover;
   }
@@ -21,7 +14,7 @@
     background-color: @toy-color;
   }
 
-  a {
+  &__item-text {
     max-width: 115px;
     margin: 0;
     margin-left: 30px;
@@ -32,5 +25,21 @@
     line-height: 30px;
     text-decoration: none;
  }
+
+}
+
+@media @tablet-widths {
+.catalog {
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    width: 334px;
+    height: 117px;
+  }
+
+  &__item-text {
+    max-width: 500px;
+  }
 
 }

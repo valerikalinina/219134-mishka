@@ -1,8 +1,9 @@
 .form {
-  padding-left: 0px;
-  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
   border: none;
-  min-width: 260px;
+  width: 260px;
   font-size: 15px;
   line-height: 24px;
   font-family: 'Open Sans';
@@ -10,14 +11,18 @@
   font-style: normal;
 	color: black;
   background: #fff;
-  margin: 0;
+  margin: 0 auto;
 
   &__fieldset {
     border: none;
   }
 
   &__form-name {
+    padding: 21px;
     padding-left: 0;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bold;
     color: @link-color-hover;
   }
 
@@ -29,11 +34,15 @@
   }
 
   &__rd {
+    margin: 19px 0 4px;
+    padding-bottom: 21px;
   }
 
   &__chk {
-
+    margin: 14px 0 3px;
+    padding-bottom: 22px;
   }
+
 
   &__form__rule {
     color: @type-color;
@@ -47,7 +56,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    padding: 0 46px;
+    padding: 0 44px;
     font-size:18px;
     line-height: 20px;
     width: 168px;
@@ -59,8 +68,8 @@
   }
 
   &__field {
+    width: 260px;
     padding-top: 18px;
-    min-width: 260px;
     border: none;
     border-bottom: 2px solid black;
   }
@@ -92,37 +101,25 @@
 .form-text {
 
   &__text {
+    width: 260px;
+    height: 142px;
     border: 2px solid black;
 
   }
 }
 
 .separator {
-  width: 198px;
-  height: 1px;
-  background-color: @link-color-hover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 
   &__type {
-
+    align-items: flex-end;
+    flex-basis: auto;
+    flex-grow: 1;
+    height: 1px;
+    background-color: @link-color-hover;
   }
 
-  &__color {
-
-  }
-
-  &__surname {
-
-  }
-
-  &__tel {
-
-  }
-
-  &__email {
-
-  }
-
-  &__add {
-
-  }
 }

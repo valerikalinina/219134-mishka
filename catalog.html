@@ -11,15 +11,17 @@
   </head>
 
 <body class='body__catalog'>
-  <header class='page-header'>
+  <header class='page-header page-header_container'>
     <div class='page-header__logo'>
-      <img src='img/logo-mobile.svg' width='66' height='36' alt='Mishka'>
+      <div class='page-header__logo-logo'>
+        <img src='img/logo-mobile.svg' width='66' height='36' alt='Mishka'>
+      </div>
     </div>
     <button class='page-header__toggle' type='button'>Открыть меню</button>
     <nav class='main-nav page-header__nav main-nav--closed main-nav-nojs'>
       <div class='main-nav__wripper'>
         <ul class='main-nav__items'>
-          <li class='main-nav__item'><a class='main-nav__variables' href='catalog.html'>Каталог товаров</a></li>
+          <li class='main-nav__item'><a class='main-nav__variables' href='#'>Каталог товаров</a></li>
           <li class='main-nav__item'><a class='main-nav__variables' href='form.html'>Вязание на заказ</a></li>
           <li class='main-nav__item'><a class='main-nav__variables' href='#'>Поиск по сайту</a></li>
           <li class='main-nav__item'><a class='main-nav__variables' href='#' title='Войти'>Корзина пока пуста</a></li>
@@ -27,7 +29,7 @@
       </div>
     </nav>
   </header>
-  <main class='page-content'>
+  <main class='page-content page-content_container'>
     <section class='page-content__promo-catalog'>
       <b class='page-content__title-catalog'>Каталог товаров</b>
     </section>
@@ -75,16 +77,16 @@
       <a class='video__btn'>Сделать заказ</a>
     </section>
   </main>
-  <footer class='page-footer'>
+  <footer class='page-footer page-footer_container'>
     <div class='page-footer social'>
       <div class='social_icons'>
         <ul class='social__items'>
-          <li class='social__item'><a class='social__social-inst'>Инстаграм</a></li>
-          <li class='social__item'><a class='social__social-fb'>Фейсбук</a></li>
-          <li class='social__item'><a class='social__social-tw'>Твиттер</a></li>
+          <li class='social__item'><a class='social__social social__inst'>Инстаграм</a></li>
+          <li class='social__item'><a class='social__social social__fb'>Фейсбук</a></li>
+          <li class='social__item'><a class='social__social social__tw'>Твиттер</a></li>
         </ul>
       </div>
-      <a class='social__link' href='#'>Разработано</a>
+      <div class='social__developer'><a class='social__link' href='#'>Разработано</a></div>
     </div>
   </footer>
 </body>
