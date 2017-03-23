@@ -5,6 +5,14 @@
   color: @type-color;
   margin: 0 auto;
 
+  &__text-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+  }
+
   &__title {
     padding: 0 30px;
     color: black;
@@ -82,6 +90,100 @@
     line-height: 20px;
     border: 2px solid @type-color;
     text-transform: uppercase;
+  }
+
+  &__btn:hover {
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #444;
+  }
+
+  &__btn:active {
+    background-color: #444;
+    color: #7c7c7c;
+    border: 2px solid #444;
+  }
+
+}
+
+@media (@tablet-widths) {
+
+  .contacts {
+    width: 668px;
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      padding: 0;
+      margin-bottom: 41px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      width: 334px;
+    }
+
+    &__item {
+      padding: 0;
+    }
+
+    &___item-adres {
+      width: 225px;
+    }
+
+    &__map {
+      margin-top: 45px;
+    }
+
+    &_btn {
+      margin: 55px 0;
+    }
+
+  }
+
+}
+
+@media (@desktop-widths) {
+
+  .contacts {
+    width: 1050px;
+    height: 456px;
+    margin-top: 71px;
+    margin-bottom: 105px;
+    margin: 0 auto;
+
+    &__info {
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-top: 54px;
+    }
+
+    &__contacts-btn {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__text-btn {
+      margin-left: 175px;
+    }
+
+    &__map {
+      display: none;
+    }
+
+    &__btn {
+      margin: 0;
+      margin-top: 85px;
+    }
+
   }
 
 }

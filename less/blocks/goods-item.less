@@ -30,9 +30,6 @@
   }
 
   &__stat  {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     margin-bottom: 28px;
   }
 
@@ -67,8 +64,8 @@
 
   &__price {
     display: flex;
-    justify-content: center;
     margin-top: 18px;
+    margin-left: 67px;
     font-size: 17px;
     line-height: 24px;
     color: @type-color;
@@ -91,4 +88,153 @@
     border: 2px solid @type-color;
     text-transform: uppercase;
   }
+
+  &__btn:hover {
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #444;
+  }
+
+  &__btn:active {
+    background-color: #444;
+    color: #7c7c7c;
+    border: 2px solid #444;
+  }
+
+  &__order {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+
+  &__information {
+    order: 1;
+    margin-right: 50px;
+  }
+
+  &__photo {
+    order: 2;
+  }
+
+  &__price-btn {
+    order: 3;
+  }
+
+}
+
+@media (@tablet-widths) {
+  .goods-item {
+    display: flex;
+
+    &__title-name {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      margin-right: 150px;
+    }
+
+    &__subtitle {
+      margin-top: 20px;
+      vertical-align: middle;
+      text-align: center;
+      max-width: 70px;
+      line-height: 17px;
+    }
+
+    &__content {
+      margin-bottom: 40px;
+    }
+
+    &__stat {
+      margin-bottom: 50px;
+    }
+
+    &__order {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 53px;
+    }
+
+    &__information {
+      margin-right: 50px;
+    }
+
+    &__information-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__photo {
+      margin-top: 20px;
+    }
+
+    &__price-btn {
+      margin-top: 48px;
+    }
+  }
+}
+
+@media (@desktop-widths) {
+
+.goods-item {
+  width: 1050px;
+  height: 636px;
+  margin-bottom: 73px;
+
+  &__title {
+    order: 2;
+    font-size: 53px;
+    line-height: 57px;
+    margin-right: 150px;
+    z-index: 1;
+    margin-bottom: 9px;
+  }
+
+  &__subtitle {
+    order: 1;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 70px;
+    line-height: 17px;
+    margin-right: 58px;
+    margin-left: 45px;
+    margin-top: 50px;
+  }
+
+  &__content {
+    margin-bottom: 50px;
+  }
+
+  &__stat {
+    margin-bottom: 100px;
+  }
+
+  &__order {
+    display: flex;
+    flex-direction: row;
+    margin-left: 175px;
+  }
+
+  &__information {
+    margin-right: 105px;
+  }
+
+  &__information-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 175px;
+  }
+
+  &__photo {
+    display: none;
+  }
+}
 }

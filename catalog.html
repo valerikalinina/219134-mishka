@@ -8,7 +8,7 @@
   <meta name="format-detection" content="telephone=no">
   <link href="css/normalizecss" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  </head>
+</head>
 
 <body class='body__catalog'>
   <header class='page-header page-header_container'>
@@ -34,51 +34,71 @@
       <b class='page-content__title-catalog'>Каталог товаров</b>
     </section>
     <section class='catalog-list'>
-      <div class='catalog-list__goods goods'>
+      <div class='goods'>
+      <div class='goods__goods-list'>
         <div class='goods_photo'>
           <img src='img/photo-1-mobile@1x.jpg' width='260' height='195' alt='Зайчик-попрыгайчик' />
         </div>
-        <div class='goods__text'>
-          <h1 class='goods__name'>Зайчик-попрыгайчик</h1>
-          <b class='goods__description'>Рост 30 см, вес 200 г</b>
+        <div class='goods__text-price'>
+          <div class='goods__text'>
+            <h1 class='goods__name'>Зайчик-попрыгайчик</h1>
+            <b class='goods__description'>Рост 30 см, вес 200 г</b>
+          </div>
+          <div class='goods__basket-price'>
+            <span class='goods__price'>1200 руб.</span>
+            <a class='goods__basket'>Корзина</a>
+          </div>
         </div>
-        <span class='goods__price'>1200 руб.</span>
-        <a class='goods__basket'>Корзина</a>
       </div>
-      <div class='catalog-list__goods goods'>
+      <div class='goods__goods-list'>
         <div class='goods_photo'>
           <img src='img/photo-2-mobile@1x.jpg' width='260' height='195' alt='Корзина для белья' />
         </div>
-        <div class='goods__text'>
-          <h1 class='goods__name'>Корзина для белья</h1>
-          <b class='goods__description'>Диаметр 15 см, высота 10 см</b>
+        <div class='goods__text-price'>
+          <div class='goods__text'>
+            <h1 class='goods__name'>Корзина для белья</h1>
+            <b class='goods__description'>Диаметр 15 см, высота 10 см</b>
+          </div>
+          <div class='goods__basket-price'>
+            <span class='goods__price'>690 руб.</span>
+            <a class='goods__basket'>Корзина</a>
+          </div>
         </div>
-        <span class='goods__price'>690 руб.</span>
-        <a class='goods__basket'>Корзина</a>
       </div>
-      <div class='catalog-list__goods goods'>
+      <div class='goods__goods-list'>
         <div class='goods_photo'>
           <img src='img/photo-3-mobile@1x.jpg' width='260' height='195' alt='Корзина для игрушек' />
         </div>
-        <div class='goods__text'>
-          <h1 class='goods__name'>Большая корзина для игрушек</h1>
-          <b class='goods__description'>Диаметр 30см, высота 30 см</b>
+        <div class='goods__text-price'>
+          <div class='goods__text'>
+            <h1 class='goods__name'>Большая корзина для игрушек</h1>
+            <b class='goods__description'>Диаметр 30см, высота 30 см</b>
+          </div>
+          <div class='goods__basket-price'>
+            <span class='goods__price'>1500 руб.</span>
+            <a class='goods__basket'>Корзина</a>
+          </div>
         </div>
-        <span class='goods__price'>1500 руб.</span>
-        <a class='goods__basket'>Корзина</a>
+      </div>
       </div>
     </section>
     <section class='video'>
-      <h2 class='video__title'>Процесс производства</h2>
       <div class='photo'>
         <img src='img/video-mobile@1x.jpg' width='260' height='150' alt='Видео' />
       </div>
-      <p class="video__content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class='video__btn'>Сделать заказ</a>
+      <div class='video__info'>
+        <h2 class='video__title'>Процесс производства</h2>
+          <p class="video__content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class='video__btn'>Сделать заказ</a>
+        </div>
+      </div>
     </section>
   </main>
   <footer class='page-footer page-footer_container'>
-    <div class='page-footer social'>
+    <div class='social'>
+      <div class='social__logo'>
+        <a class='social__logo-link'>Мишка</a>
+      </div>
       <div class='social_icons'>
         <ul class='social__items'>
           <li class='social__item'><a class='social__social social__inst'>Инстаграм</a></li>
@@ -86,7 +106,9 @@
           <li class='social__item'><a class='social__social social__tw'>Твиттер</a></li>
         </ul>
       </div>
-      <div class='social__developer'><a class='social__link' href='#'>Разработано</a></div>
+      <div class='social__developer'>
+        <a class='social__link' href='#'>Разработано</a>
+      </div>
     </div>
   </footer>
 </body>

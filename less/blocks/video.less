@@ -1,8 +1,14 @@
 .video {
+  display: flex;
   width: 260px;
-  height: 503px;
+  height: 480px;
   margin: 0 auto;
   border: 1px solid @border-color;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__title {
     width: 128px;
@@ -15,7 +21,8 @@
   }
 
   &__photo {
-    margin: 26px 0 35px;
+    display: flex;
+    margin:0;
   }
 
   &__content {
@@ -24,6 +31,7 @@
     color: @type-color;
     font-size: 13px;
     line-height: 24px;
+    margin-top: 23px;
   }
 
   &__btn {
@@ -34,11 +42,118 @@
     height: 38px;
     color: @type-color;
     padding: 6px 24px;
-    margin: 17px 34px 32px;
+    margin: 17px 34px 0px;
     font-size: 17px;
     line-height: 16px;
     text-decoration: none;
     border: 2px solid @type-color;
     text-transform: uppercase;
   }
+
+  &__btn:hover {
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #444;
+  }
+
+  &__btn:active {
+    background-color: #444;
+    color: #7c7c7c;
+    border: 2px solid #444;
+  }
+}
+
+@media (@tablet-widths) {
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 668px;
+    height: 744px;
+    border: none;
+
+    &__info {
+      width: 668px;
+      height: 288px;
+      padding: 0 40px;
+      margin-top: 0;
+      padding: 0 40px;
+      border: 1px solid @border-color;
+    }
+
+    &__photo {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__content {
+      max-width: 582px;
+      font-size: 15px;
+      line-height: 30px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    &__btn {
+      padding: 6px 221px;
+    }
+
+
+  }
+
+}
+
+@media (@desktop-widths) {
+
+  .video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1050px;
+    margin-top: 60px;
+    margin-bottom: 105px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      max-width: 369px;
+      max-height: 455px;
+      border: 1px solid @border-color;
+      padding: 100px 76px 60px 60px;
+      flex-shrink: 1
+    }
+
+    &__photo {
+      width: 683px;
+      height: 455px;
+    }
+
+    &__content {
+      font-size: 15px;
+      line-height: 30px;
+      max-width: 226px;
+      margin-top: 16px;
+      margin-bottom: 38px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0;
+      padding-left: 34px;
+    }
+
+    &__btn {
+      margin-top: 0;
+    }
+
+ }
+
 }

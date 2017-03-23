@@ -5,6 +5,7 @@
   margin-bottom: 44px;
 
   &__title {
+    order: 1;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -16,7 +17,8 @@
   }
 
   &__text {
-    width: 260px;
+    order: 2;
+    max-width: 260px;
     margin: 0;
     padding: 0;
     color: @type-color;
@@ -26,6 +28,7 @@
   }
 
   &__auhor-name {
+    order: 3;
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
@@ -33,6 +36,7 @@
   }
 
   &__auhor-social {
+    order: 4;
     font-weight: normal;
     color: @type-color;
     font-size: 17px;
@@ -40,8 +44,9 @@
   }
 
   &__paginator {
-
+    order: 5;
   }
+
   &__items {
     display: flex;
     flex-direction: row;
@@ -79,6 +84,7 @@
   }
 
   &__btn {
+    order: 6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,4 +99,126 @@
     border: 2px solid @type-color;
     text-transform: uppercase;
   }
+
+  &__btn:hover {
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #444;
+  }
+
+  &__btn:active {
+    background-color: #444;
+    color: #7c7c7c;
+    border: 2px solid #444;
+  }
+
+}
+@media (@tablet-widths) {
+
+  .reviews {
+    display: flex;
+    width: 668px;
+    height: 456px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+
+    &__height {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      order: 1;
+      font-size: 43px;
+      line-height: 50px;
+      margin-top: 62px;
+      margin-right: 317px;
+      margin-bottom: 52px;
+    }
+
+    &__btn {
+      order: 2;
+    }
+
+    &__cell {
+      max-width: 645px;
+    }
+
+    &__text {
+      max-width: 643px;
+      margin-bottom: 34px;
+    }
+
+    &__auhor-column {
+      display: flex;
+      flex-direction: column;
+      margin-right: 234px;
+    }
+
+    &__low {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &__auhor-name {
+      order: 1;
+    }
+
+    &__auhor-social {
+      order: 2;
+    }
+
+    &__paginator {
+      order: 3;
+    }
+
+    &__item {
+      border: none;
+    }
+
+  }
+
+}
+
+@media (@desktop-widths) {
+
+  .reviews {
+    width: 1050px;
+
+    &__reviews {
+      margin-left: 175px;
+    }
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+      margin-top: 48px;
+      margin-bottom: 68px;
+      margin-right: 484px;
+    }
+
+    &__btn {
+      margin-bottom: 55px;
+    }
+
+
+    &__cell {
+      max-width: 770px;
+    }
+
+    &__text {
+      max-width: 770px;
+      margin-bottom: 34px;
+    }
+
+    &__auhor-column {
+      margin-right: 438px;
+    }
+
+  }
+
 }

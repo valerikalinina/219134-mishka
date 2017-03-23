@@ -14,6 +14,8 @@
   margin: 0 auto;
 
   &__fieldset {
+    display: flex;
+    flex-direction: column;
     border: none;
   }
 
@@ -67,11 +69,29 @@
     text-transform: uppercase;
   }
 
+  &__btn:hover {
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #444;
+  }
+
+  &__btn:active {
+    background-color: #444;
+    color: #7c7c7c;
+    border: 2px solid #444;
+  }
+
+
   &__field {
     width: 260px;
     padding-top: 18px;
     border: none;
     border-bottom: 2px solid black;
+  }
+
+  &__field[value] {
+    padding-bottom: 17px;
+    color: #d6d6d6;
   }
 }
 
@@ -100,11 +120,16 @@
 
 .form-text {
 
-  &__text {
+  &__field {
     width: 260px;
     height: 142px;
     border: 2px solid black;
+  }
 
+  &__field {
+    padding-top: 15px;
+    padding-left: 17px;
+    color: #d6d6d6;
   }
 }
 
@@ -121,5 +146,54 @@
     height: 1px;
     background-color: @link-color-hover;
   }
+
+}
+
+@media (@tablet-widths) {
+
+  .form {
+    width: 668px;
+
+
+    &__fieldset {
+      width: 668px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__fieldset:nth-of-type(2) {
+      border-color: #f1f1f1;
+    }
+
+    &__fieldset:nth-of-type(4) {
+      border-color: #f1f1f1;
+    }
+
+    &__separator {
+      width: 167px;
+      height: 304px;
+      align-items: flex-start;
+    }
+
+    &__column {
+      width: 501;
+      height: 304px;
+      align-items: flex-start;
+      padding: 50px 0;
+
+    }
+  }
+
+  .separator {
+
+    &__type {
+      display: none;
+    }
+  }
+}
+
+
+@media (@desktop-widths) {
 
 }

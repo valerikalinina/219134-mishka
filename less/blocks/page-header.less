@@ -87,15 +87,20 @@
 }
 
 
-@media @tablet-widths {
+@media (@tablet-widths) {
 
 .page-header {
     display: flex;
     flex-direction: row;
     position: relative;
     width: 84%;
+    height: 88px;
     max-width: 960px;
     min-height: 88px;
+
+    &__container {
+      .container();
+    }
 
   &__logo {
     display: flex;
@@ -108,8 +113,6 @@
     position: absolute;
     left: 0%;
     top: 0%;
-    border-right: 1px solid @border-color;
-    border-bottom: 1px solid @border-color;
   }
 
   &__logo-logo {
@@ -119,6 +122,10 @@
     position: absolute;
     left: 48px;
     top: 22px;
+  }
+
+  &__toggle {
+    display: none;
   }
  }
 

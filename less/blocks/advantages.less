@@ -6,6 +6,7 @@
   margin-bottom: 24px;
 
   &__title {
+    margin-top: 20px;
     color: black;
     font-size: 25px;
     line-height: 30px;
@@ -47,4 +48,85 @@
     width: 260px;
   }
 
+}
+@media (@tablet-widths) {
+  .advantages {
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      margin-top: 33px;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 668px;
+      justify-content: flex-start;
+    }
+
+    &__item {
+      margin-bottom: 93px;
+    }
+
+    &__item-column {
+      width: 334px;
+    }
+
+    &__item-first {
+      width: 206px;
+    }
+
+    &__item-two {
+      width: 235px;
+    }
+
+    &__item-three {
+      width: 212px;
+    }
+
+    &__item-four {
+      width: 250px;
+    }
+
+    &__item-five {
+      width: 300px;
+    }
+
+    &__item-six {
+      width: 235px;
+    }
+
+
+  }
+}
+
+@media (@desktop-widths) {
+  .advantages {
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+      margin-top: 45px;
+    }
+
+    &__item-column {
+      width: 350px;
+    }
+
+    &__items {
+      width: 700px;
+    }
+
+    &__item {
+      margin-bottom: 93px;
+    }
+
+  }
 }

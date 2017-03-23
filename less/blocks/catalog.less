@@ -1,12 +1,16 @@
 .catalog {
+  display: flex;
+  flex-direction: column;
 
   &__item {
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;
-    width: auto;
+    width: 320;
     height: 103px;
+    color: #fff;
     background-color: @link-color-hover;
   }
 
@@ -14,33 +18,80 @@
     background-color: @toy-color;
   }
 
+  &__item:hover {
+    height: 108px;
+    padding-bottom: 5px;
+  }
+
+  &__item:active {
+    height: 108px;
+    padding-bottom: 5px;
+  }
+
   &__item-text {
     max-width: 115px;
+    height: 104px;
     margin: 0;
     margin-left: 30px;
     padding: 18px 0;
-    width: 260px;
     color: white;
     font-size: 20px;
     line-height: 30px;
     text-decoration: none;
  }
 
+ &__item-right:active {
+   color: #8be2d0;
+ }
+
+ &__item-left:active {
+   color: #7ed4c6;
+ }
+
+
 }
 
-@media @tablet-widths {
+@media (@tablet-widths) {
 .catalog {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   &__item {
-    display: flex;
-    flex-direction: row;
     width: 334px;
     height: 117px;
   }
 
-  &__item-text {
-    max-width: 500px;
+  &__item:hover {
+    height: 122px;
   }
+
+  &__item:active {
+    height: 122px;
+  }
+
+}
+
+}
+
+@media (@desktop-widths) {
+
+.catalog {
+  margin: 0 50px;
+
+  &__item {
+    width: 525px;
+    height: 126px;
+  }
+
+  &__item:hover {
+    height: 530px;
+  }
+
+  &__item:active {
+    height: 530px;
+  }
+
 }
 
 }

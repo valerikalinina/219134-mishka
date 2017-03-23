@@ -21,10 +21,10 @@
     <nav class='main-nav page-header__nav main-nav--closed main-nav-nojs'>
       <div class='main-nav__wripper'>
         <ul class='main-nav__items'>
-          <li class='main-nav__item'><a class='main-nav__variables' href='catalog.html'>Каталог товаров</a></li>
-          <li class='main-nav__item'><a class='main-nav__variables' href='#'>Вязание на заказ</a></li>
-          <li class='main-nav__item'><a class='main-nav__variables--search' href='#'>Поиск по сайту</a></li>
-          <li class='main-nav__item'><a class='main-nav__variables--user-login' href='#' title='Войти'>Корзина пока пуста</a></li>
+          <li class='main-nav__item main-nav__item-catalog'><a class='main-nav__variables' href='catalog.html'>Каталог товаров</a></li>
+          <li class='main-nav__item main-nav__item-order'><a class='main-nav__variables' href='form.html'>Вязание на заказ</a></li>
+          <li class='main-nav__item main-nav__item-search'><a class='main-nav__variables main-nav__variables-search' href='#'>Поиск по сайту</a></li>
+          <li class='main-nav__item main-nav__item-basket'><a class='main-nav__variables' href='#' title='Корзина'>Корзина пока пуста</a></li>
         </ul>
       </div>
     </nav>
@@ -39,22 +39,25 @@
       </div>
       <form class='form' action='https://echo.htmlacadevy.ru' method='get'>
         <fieldset class='form__fieldset form'>
-          <div class='separator'>
+          <div class='form__separator separator'>
             <legend class='form__form-name'>Тип</legend>
             <div class='separator__type'></div>
           </div>
+          <div class='form_column'>
           <label class='form__name'>
           <input class='form__rd' type='radio' name='goods' value='Аксессуары' checked>
           Аксессуары для интерьера</label>
           <label class='form__name'>
           <input class='form__rd' type='radio' name='goods' value='Игрушки'>
           Детская игрушка</label>
+          </div>
         </fieldset>
         <fieldset class='form__fieldset form__color form'>
           <div class='separator'>
             <legend class='form__form-name'>Цвет</legend>
             <div class='separator__type'></div>
           </div>
+          <div class='form_column'>
           <label class='form__name'>
           <input class='form__chk' type='checkbox' name='color' value='Белый' checked>
           Белый</label>
@@ -73,12 +76,14 @@
           <label class='form__name'>
           <input class='form__chk' type='checkbox' name='color' value='Оранжевый'>
           Оранжевый</label>
+          </div>
         </fieldset>
         <fieldset class='form form__fieldset form__name'>
-          <div class='separator'>
+            <div class='separator'>
             <legend class='form__form-name form-name'>Фио</legend>
             <div class='separator__type'></div>
           </div>
+          <div class='form_column'>
           <label class='form-name__description'>Имя:
           <input class='form__field' type='text' name='name' value='Введите ваше имя' required>
           </label>
@@ -88,32 +93,39 @@
           <label class='form-name__description'>Отчество:
           <input class='form__field' type='text' name='name' value='Отчество, если желаете'>
           </label>
+        </div>
         </fieldset>
         <fieldset class='form form__fieldset form__tel'>
-          <div class='separator'>
+            <div class='separator'>
             <legend class='form__form-name'>Тел</legend>
             <div class='separator separator__type'></div>
           </div>
+          <div class='form_column'>
           <label class='form-tel__description'>
-          <input class='form__field' type='tel' name='tel' pattern='[+7]{1}-[0-9]{3}-[0-9]{3}' required>
+          <input class='form__field' type='tel' name='tel' pattern='[+7]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}' required>
           </label>
+        </div>
         </fieldset>
         <fieldset class='form form__fieldset form__email'>
-          <div class='separator'>
+            <div class='separator'>
             <legend class='form__form-name'>E-mail</legend>
             <div class='separator separator__type'></div>
           </div>
-          <label class='form-email-describtion'>
-          <input class='form__field' type="email" name='Ваш Email' required>
-          </label>
+          <div class='form_column'>
+            <label class='form-email__describtion'>
+            <input class='form__field' type="email" name='Ваш Email' required>
+            </label>
+          </div>
         </fieldset>
         <fieldset class='form form__fieldset form__text form'>
-          <div class='separator'>
+            <div class='separator'>
             <legend class='form__form-name'>Доп</legend>
             <div class='separator separator__type'></div>
           </div>
+          <div class='form_column'>
           <label class='form-text'>
-          <textarea class='form-text__text' name="comment">Опишите все ваши пожелания к заказу</textarea></label>
+          <textarea class='form-text__field' name="comment">Опишите все ваши пожелания к заказу</textarea></label>
+        </div>
         </fieldset>
         <b class='form__rule'><sup>*</sup>Поля обязательны для заполнения</b>
         <a class='form__btn'>Отправить заказ</a>
@@ -121,7 +133,10 @@
     </section>
   </main>
   <footer class='page-footer page-footer_container'>
-    <div class='page-footer social'>
+    <div class='social'>
+      <div class='social__logo'>
+        <a class='social__logo-link'>Мишка</a>
+      </div>
       <div class='social_icons'>
         <ul class='social__items'>
           <li class='social__item'><a class='social__social social__inst'>Инстаграм</a></li>
@@ -129,7 +144,9 @@
           <li class='social__item'><a class='social__social social__tw'>Твиттер</a></li>
         </ul>
       </div>
-      <div class='social__developer'><a class='social__link' href='#'>Разработано</a></div>
+      <div class='social__developer'>
+        <a class='social__link' href='#'>Разработано</a>
+      </div>
     </div>
   </footer>
 </body>
