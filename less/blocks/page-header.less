@@ -1,32 +1,16 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  height: auto;
-
-  &__container {
-    .container();
-  }
+  box-shadow: 0px 1px 0px #ececec;
+  z-index: 1;
 
   &__logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    width: 320px;
+    width: 130px;
     height: 80px;
-    border-bottom: 1px solid @border-color;
-  }
-
-  &__logo-logo {
-    padding: 0;
-    margin: 0;
+    margin: 0 auto;
     z-index: 2;
-    position: absolute;
-    left: 116px;
-    top: 22px;
   }
 
   &__logo:hover {
@@ -37,96 +21,65 @@
     opacity: 0.3;
   }
 
-  &__toggle {
-    position: absolute;
-    right: 30px;
-    top: 32px;
-    font-size: 0px;
-    z-index: 2;
-    display: block;
-    width: 21px;
-    height: 14px;
-    font-size: 0;
-    background-color: #fff;
-    cursor: pointer;
-    border: none;
-    }
-/*
-    .main-nav--closed .main-nav__toggle::before {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: 17px;
-      width: 36px;
-      height: 2px;
-      background-color: #000;
-      box-shadow: 0 8px 0 0 #000,
-                  0 16px 0 0 #000;
-     }
-
-     .main-nav--closed .main-nav__toggle:active::before {
-       background-color: rgba(0, 0, 0, 0.3);
-       box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3),
-                   0 16px 0 0 rgba(0, 0, 0, 0.3);
-      }
-
-  &__toggle::before {
-    display: block;
-    position: absolute;
-    right: 30px;
-    top: 32px;
-    font-size: 0px;
-    z-index: 2;
+  &__logo-link {
+    width: 86px;
+    height: 40px;
   }
-*/
-
-  &__nav {
-    padding-right: 0px;
-  }
-
 }
-
 
 @media (@tablet-widths) {
 
 .page-header {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 84%;
-    height: 88px;
-    max-width: 960px;
-    min-height: 88px;
 
-    &__container {
-      .container();
-    }
-
-  &__logo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  &__logo-logo {
-    flex-grow: 1;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-  }
-
-  &__logo-logo {
+  &__container {
+    margin: 0 auto;
     padding: 0;
-    margin: 0;
-    z-index: 2;
-    position: absolute;
-    left: 48px;
-    top: 22px;
+    max-width: 668px;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 1px 0px #ececec;
   }
-
-  &__toggle {
-    display: none;
+  &__container:after {
+    content: "Бесплатная доставка по России";
+    position: absolute;
+    bottom: -39px;
+    color: #444444;
+    font-size: 15px;
+    right: 0;
+  }
+  &__logo {
+    height: 89px;
+    margin: 0;
+    margin-right: auto;
+    box-shadow: none;
+  }
+  &__logo img {
+    width: 110px;
+    height: 55px;
   }
  }
 
+}
+
+@media (@desktop-widths) {
+  .page-header {
+
+    &__logo {
+      position: absolute;
+      top: 5%;
+      right: 42.5%;
+      width: 155px;
+      height: 89px;
+    }
+    &__logo img {
+      width: 150px;
+      height: 89px;
+    }
+ }
+}
+
+@media (min-width: 768px) and (min-width: 1150px) {
+  .page-header__container {
+    max-width: 1050px;
+  }
 }

@@ -1,106 +1,80 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 0 30px;
-  margin-bottom: 24px;
+  padding-top: 18px;
+  margin-bottom: 55px;
+  font-size: 17px;
+  font-weight: 800;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 
   &__title {
-    margin-top: 20px;
-    color: black;
     font-size: 25px;
     line-height: 30px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: -62px;
+    left: 4px;
+    fill: #63d1bb;
   }
 
   &__items {
     display: flex;
     flex-direction: column;
     margin: 0;
-    margin-top: 63px;
     padding: 0;
   }
 
   &__item {
-    margin: 0;
-    padding: 0;
+    position: relative;
+    font-size: 17px;
+    margin-top: 92px;
     list-style: none;
-    margin-bottom: 70px;
+    margin-bottom: 17px;
   }
 
-  &__link {
-    height: 40px;
-    color: black;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  &__link:first-of-type {
-    width: 175px;
-  }
-
-  &__link:nth-of-type(3) {
-    width: 181px;
-  }
-
-  &__link:nth-last-of-type(2) {
-    width: 260px;
-  }
 
 }
 @media (@tablet-widths) {
   .advantages {
+    padding-top: 20px;
 
     &__title {
       font-size: 43px;
       line-height: 50px;
-      margin-top: 33px;
+      text-indent: -4px;
+      margin-bottom: 0;
     }
 
-    &__link {
-      font-size: 20px;
-      line-height: 22px;
+    &__container {
+      padding: 0;
+      max-width: 668px;
     }
 
     &__items {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      width: 668px;
-      justify-content: flex-start;
-    }
-
-    &__item {
-      margin-bottom: 93px;
     }
 
     &__item-column {
-      width: 334px;
+      width: 45%;
     }
 
-    &__item-first {
-      width: 206px;
+    &__column:nth-child(2) {
+      margin-left: 32px;
     }
 
-    &__item-two {
-      width: 235px;
+    &__item {
+      font-size: 20px;
+      margin-top: 102px;
     }
 
-    &__item-three {
-      width: 212px;
-    }
-
-    &__item-four {
-      width: 250px;
-    }
-
-    &__item-five {
-      width: 300px;
-    }
-
-    &__item-six {
-      width: 235px;
+    &__icon {
+      top: -50px;
+      left: 6px;
     }
 
 
@@ -109,24 +83,23 @@
 
 @media (@desktop-widths) {
   .advantages {
+    padding-top: 28px;
+
+    &_container {
+      max-width: 1050px;
+    }
 
     &__title {
       font-size: 53px;
-      line-height: 57px;
-      margin-top: 45px;
     }
 
-    &__item-column {
-      width: 350px;
+    &__column:nth-child(1) {
+      margin-left: 175px;
+      width: 250px;
     }
-
-    &__items {
-      width: 700px;
+    &__column:nth-child(2) {
+      width: 300px;
+      margin-left: 100px;
     }
-
-    &__item {
-      margin-bottom: 93px;
-    }
-
   }
 }
